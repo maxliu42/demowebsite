@@ -1,55 +1,70 @@
-<!DOCTYPE html>
+i <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="keywords" content="html, css, hyper text markup language, cascading style sheets, web design, web development, programming, tutorials, guides, ">
+		<meta name="description" content="Max's Guide on How to Make a Website - What is a website? What is HTML / CSS? Learn these things here!">
         <title>Max's Website</title>
 		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/b2b4284cda.js"></script>
+		<link rel="icon" href="images/icon.ico">
+  </head>
     </head>
 	<body>
-		<!-- Header starts here-->
 		<header>
 			<h1>Max's Guide on How to Make a Website</h1>
 		</header>
 		<nav class="navbar">
 			<a class="selected" href="index.html">Home</a>
 			<a href="about.html">About</a>
-			<a href="htmlguide.html">HTML Guide</a>
+			<a href="htmlguide.html">HTML / CSS Guide</a>
 			<a href="contact.html">Contact</a>
 		</nav>
 		<main>
 			<h2><u>What is a Website?</u></h2>
 			<article>
 				<p>A website is what you are looking at right now! To create a website, we need to use <strong>HTML</strong> and <strong>CSS</strong>. <strong>HTML</strong> <i>(Hyper Text Markup Language)</i> is used to describe the <strong>structure</strong> of a website. By using tags such as &lthead&gt, &ltbody&gt, &ltheader&gt, and &ltparagraph&gt, you can organize the inforation on your website! <strong>CSS</strong> <i>(Cascading Style Sheets)</i> lets you style your website, and change things such as background colour.</p>
-			<article>
-			<h2><u>HTML Guide</u></h2>
+			</article>
+			<h2><u>HTML / CSS Guide</u></h2>
 			<p>HTML is really easy! Here are a few important things that this guide goes over:</p>
 			<ul> <!-- this is a list -->
 				<li>Headers</li>
 				<li>Paragraphs</li>
 				<li>Lists</li>
 			</ul>
-			<p>Our full guide on HTML is available <a href="htmlguide.html">here!</a> For more information, visit <a href="https://www.w3schools.com/default.asp" target="_blank">w3schools!</a></p>
-			<section class="services">
-				<article id="leftarticle">
-					<div class="shadow">
-						<img class="roundimage" src="images/red.jpg">
-					</div>
-					<h2><b><u>Left Column</u></b></h2>
-					<p>The circle above this text is red! Isn't that incredible? If you want to see a blue circle instead, then just look to the other side!</p>
-					<p>This circle has a visually appealing design, with cloudy splotches of red and purply-blue! I guess I lied when I said it was red, but a little bit of variation is good every now and then.</p>
+			<p>CSS is a bit more advanced, but it can really help make your website look great. Here are some things you'll need to know:</p>
+			<ul> <!-- this is a list -->
+				<li>Classes</li>
+				<li>ID</li>
+				<li>Syntax</li>
+			</ul>
+			<p>Our full guide on HTML / CSS is available <a href="htmlguide.html">here!</a> For more information, visit <a href="https://www.w3schools.com/default.asp" target="_blank">w3schools!</a></p>
+			<!-- Two columns section. Width is =  -->
+			<section class="lowwidth automargin">
+				<article class="leftsection">
+					<img class="transparentdropfilter" src="images/html5logo.svg">
+					<h2><b><u>HTML</u></b></h2>
+					<p>HTML is the foundation of every website. Without HTML, you wouldn't be able to display any elements at all.</p>
+					<p>HTML was created in 1993 by Tim Berners-Lee. Its invention allowed users of the Internet to navigate webpages using <em>hyperlinks</em>, which led users to other webpages. This interconnectedness was a new invention that was fundamental to the new web.</p>
+					<p>HTML has come a long way since then, and many new concepts have been introduced in HTML 5. Examples include new semantic tags, which makes web pages more machine-readable, and new ways to handle graphical content, such as video and audio tags.</p>
+					<pre> </pre>
 				</article>
-				<article id="rightarticle">
-					<div class="shadow">
-						<img class="roundimage" src="images/blue.jpg">
-					</div>
-					<h2><b><u>Right Column</u></b></h2>
-					<p>On the right side, we have the blue circle! The blue circle has an abstract feeling, with sky-like swaths of acrylic paint.</p>
-					<p>It evokes the imagery of massive, clashing ocean waves, while maintaining an floating, cloud-like aesthetic. If you want to see a red circle instead, then you can look to the left.</p>
+				<article class="rightsection">
+					<img class="transparentdropfilter" src="images/css3logo.svg">
+					<h2><b><u>CSS</u></b></h2>
+					<p>In 1996, CSS was introduced, revolutionizing webpages by seperating the content from the presentation.</p>
+					<p>Before the creation of CSS, styling a website was very difficult. Each HTML element had to be styled seperately, wasting huge amounts of space. CSS was invented to solve this problem, using external stylesheets to act on a single document at once - "cascading".</p>
+					<p>In a new age of computation, standards for styling have increased drastically. CSS 3 introduces many new tools to enhance the look of your webpages. Examples include rgba, new drop shadow tools, new border style properties, and many new selectors.</p>
+					<pre> </pre>
 				</article>
 			</section>
-			<img class="imageshadow" src="images/coding.jpg" alt="Coding Picture">
+		</article>
+			<div class="center">
+				<img src="images/coding.jpg" alt="Coding Picture">
+			</div>
 		</main>
-		<footer>
+		<footer class="center">
 			<h1>&copy Max Liu 2021.</h1>
 		</footer>
 	</body>
